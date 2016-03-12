@@ -33,7 +33,7 @@ SERVICE BEGINS AT 11AM EVERY SUNDAY GET IN TOUCH IF YOU HAVE QUESTIONS! WE’D L
     <label for="questions">Questions</label>
     <textarea class="form-control" rows="4" id="questions"></textarea>
   </div>      
-  <button type="submit" class="btn btn-default">Submit</button>
+  <button id="sendEmailBtn" type="submit" class="btn btn-default">Submit</button>
 </form>
 
 <iframe 
