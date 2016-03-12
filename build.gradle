@@ -32,6 +32,7 @@ dependencies {
 mainClassName = 'blog.ImagesDownloader'
 
 jbake {
+    description = "Build the static wb site"
     clearCache = true
 }
 
