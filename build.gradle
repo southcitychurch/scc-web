@@ -41,7 +41,7 @@ def siteDir = "$buildDir/jbake"
 
 githubPages {
   System.setProperty('jna.nosys', 'true')
-  repoUri = 'git@github.com:luistrigueiros/southcitychurch.git'
+  repoUri = 'git@github.com:southcitychurch/scc-web.git'
   targetBranch = 'gh-pages'
   pages {
     //from file('CNAME')
