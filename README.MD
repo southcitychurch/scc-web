@@ -58,5 +58,5 @@ To publish the web site run the command:
  gradle publishGhPages
 ```
   
-At the moment to publish you will need to setup git with ssh authentication, if you install the GitHub Desktop client app this will be made automatically for for. 
+At the moment to publish you will need to setup git with ssh authentication, if you install the GitHub Desktop client app this will be made automatically for for you. 
 
