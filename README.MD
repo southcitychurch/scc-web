@@ -4,7 +4,8 @@ This is the source code of the SouthCityChurch Dublin web site.
 The concept for the site is to leverage **Github** to host both the source code and the generated web site.
 The advantages of this approach are:
 
-* GitHub enables a highly collaborative authoring flow here people can work as team in an independent and distributed fashion.
+* GitHub enables a highly collaborative authoring flow. 
+* People can work as team in an independent and distributed fashion.
 * The infrastructure is free and high quality
 
 To contribute to the web site you need to have a [GitHub Account](https://github.com/join). Depending on how you would like to contribute you may need to install software.
