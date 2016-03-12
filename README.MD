@@ -13,12 +13,11 @@ As required software to work with the site we recomend using:
 * [GitHub Desktop client app available](https://desktop.github.com/).
 * [Very simple easy to easy code aware editor](https://code.visualstudio.com/) 
 
- If you planning to make simple changes you then maybe using one web based online editing using 
+If you planning to make simple changes you then maybe using one web based online editing using: 
  * GitHub alone 
  * [Web base editor for GitHub](http://prose.io/). 
  
 Additionally you may what to:
- 
 * Use watch and start features of GitHub to receive notifications of updates to the source code
 * Use the GitHub mobile app to also to get push notifications of content updates. 
 
