@@ -28,13 +28,7 @@
               </ul>
             </li>
             <li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'pages/homegroups.html'">Community</a></li>
-            <li>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'pages/contact/contact.html'">Contact</a></li>
-                <li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'pages/contact/invite-a-friend.html'">Invite a friend</a></li>
-              </ul>
-            </li>
+            <li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'pages/contact/contact.html'">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
