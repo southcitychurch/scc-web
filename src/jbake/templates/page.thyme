@@ -10,9 +10,7 @@
 			<div class="page-header">
 				<h1 th:text='${content.title}'>title</h1>
 			</div>
-		
-			<p><em th:text='${#dates.format(content.date,"dd MMMM yyyy")}'>date</em></p>
-		
+
 			<p th:utext='${content.body}'>body</p>
 		
 			<hr />
