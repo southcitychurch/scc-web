@@ -33,7 +33,7 @@ mainClassName = 'blog.ImagesDownloader'
 
 jbake {
     description = "Build the static wb site"
-    clearCache = true
+    //clearCache = true
 }
 
 defaultTasks 'jbake'
