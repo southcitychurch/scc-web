@@ -39,8 +39,8 @@ The flow of working in the web site as a deeloper is the following:
 
 
 As foundation frameworks the web site is using:  
- 1. A static web site generator called JBake you can find more about it at http://jbake.org/ 
- 2. Gradle is the build tool used for automation to build and publish the web site http://gradle.org/ 
+ 1. A static web site generator called JBake you can find more about it at http://jbake.org/. 
+ 2. Gradle is the build tool used for automation to build and publish the web site, more info about it at http://gradle.org/. 
 
 To build the web site locally on you own system just clone the repo:
 
@@ -57,8 +57,6 @@ To publish the web site run the command:
 ```Bash
  gradle publishGhPages
 ```
-
   
-
-At the moment to publish you will need to setup git with ssh authentication.
+At the moment to publish you will need to setup git with ssh authentication, if you install the GitHub Desktop client app this will be made automatically for for. 
 
