@@ -33,7 +33,7 @@ SERVICE BEGINS AT 11AM EVERY SUNDAY GET IN TOUCH IF YOU HAVE QUESTIONS! WE’D L
     <label for="questions">Questions</label>
     <textarea class="form-control" rows="4" id="questions"></textarea>
   </div>      
-  <button id="sendEmailBtn" type="submit" class="btn btn-default">Submit</button>
+  <button type="button" class="btn btn-default" id="sendEmailBtn">Submit</button>
 </form>
 
 <iframe 
@@ -42,3 +42,22 @@ SERVICE BEGINS AT 11AM EVERY SUNDAY GET IN TOUCH IF YOU HAVE QUESTIONS! WE’D L
     frameborder="0" 
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.156587059071!2d-6.200225999999999!3d53.286729999999935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867091d83524f45%3A0x31d3d773a2cd403!2sSouth+City+Church!5e0!3m2!1sen!2sus!4v1394892599835" 
     style="border: 0;"></iframe>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Your email has been post, we will get back to you shortly.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>      
+    </div>
+  </div>

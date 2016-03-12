@@ -26,6 +26,8 @@ repositories {
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.4'
     compile 'io.ratpack:ratpack-groovy:1.2.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
 }
 
 //mainClassName = 'blog.server'

@@ -8,6 +8,7 @@
 	    <meta name="author" content=""/>
 	    <meta name="keywords" content=""/>
 	    <meta name="generator" content="JBake"/>
+	    <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
 	
 	    <!-- Le styles -->
 	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
