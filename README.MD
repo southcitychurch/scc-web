@@ -9,7 +9,7 @@ The advantages of this approach are:
 * The infrastructure is free and high quality
 
 To contribute to the web site you need to have a [GitHub Account](https://github.com/join). Depending on how you would like to contribute you may need to install software.
-As required software to work with the siite we recomend:
+As required software to work with the site we recomend using:
 * [GitHub Desktop client app available](https://desktop.github.com/).
 * [Very simple easy to easy code aware editor](https://code.visualstudio.com/) 
 
