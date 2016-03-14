@@ -2,9 +2,9 @@
 function buildRequestData() {
     return {
         from:'Mailgun Sandbox <postmaster@sandbox1f1c8a6d340244db94f21f52fc273de8.mailgun.org>',
-        to:'luistrigueiros <luistrigueiros@gmail.com>',
-        subject: 'Hello luistrigueiros',
-        text:'Congratulations luistrigueiros, you just sent an email with Mailgun!  You are truly awesome!'
+        to:('#personEmail').val(),
+        subject: 'Hello from ' + $('#personName').val(),
+        text: $('#questions').val()
     };
 }
 
@@ -20,6 +20,7 @@ function buildAjaxConf() {
         console.log(data);
         $("#myModal").modal();
     };
+    var theData = buildRequestData()
     return {
         type: "POST",
         url: "https://api.mailgun.net/v3/sandbox1f1c8a6d340244db94f21f52fc273de8.mailgun.org/messages",
@@ -27,7 +28,7 @@ function buildAjaxConf() {
         error:  errorFuncObj,
         success: successFuncObj,
         beforeSend: basicAuthFuncObj,
-        data: buildRequestData()
+        data: theData
      };
 }
 
