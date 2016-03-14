@@ -1,4 +1,4 @@
-package blog
+package org.scc
 
 class ImagesDownloader {
 
