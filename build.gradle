@@ -38,12 +38,13 @@ defaultTasks 'jbake'
 
 
 githubPages {
-    repoUri = 'https://github.com/southcitychurch/southcitychurch.github.io.git'
-    targetBranch = 'master'
-    pages {
-      //from file('CNAME')
-      from file("$buildDir/jbake")
-    }
+  System.setProperty('jna.nosys', 'true')
+  repoUri = 'git@github.com:southcitychurch/southcitychurch.github.io.git'
+  targetBranch = 'master'
+  pages {
+    //from file('CNAME')
+    from file("$buildDir/jbake")
+  }
 }
 
 publishGhPages.dependsOn jbake
