@@ -49,4 +49,4 @@ githubPages {
 
 publishGhPages.dependsOn jbake
 check.dependsOn jbake
-//assemble.dependsOn publishGhPages
+assemble.dependsOn publishGhPages
