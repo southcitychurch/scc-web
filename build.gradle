@@ -17,30 +17,25 @@ buildscript {
 apply plugin: 'me.champeau.jbake'
 apply plugin: 'github-pages'
 apply plugin: 'groovy'
-apply plugin: 'application'
 
 repositories {
     jcenter()
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.4.4'
-    compile 'io.ratpack:ratpack-groovy:1.2.0'
+    compile 'org.codehaus.groovy:groovy-all:2.4.6'
     testCompile 'junit:junit:4.12'
     testCompile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
 }
 
-//mainClassName = 'blog.server'
-mainClassName = 'blog.ImagesDownloader'
-
+def siteDir = "$buildDir/jbake"
 jbake {
     description = "Build the static wb site"
-    //clearCache = true
 }
 
 defaultTasks 'jbake'
 
-def siteDir = "$buildDir/jbake"
+
 
 githubPages {
   System.setProperty('jna.nosys', 'true')
@@ -54,4 +49,4 @@ githubPages {
 
 publishGhPages.dependsOn jbake
 check.dependsOn jbake
-//assemble.dependsOn publishGhPages
+assemble.dependsOn publishGhPages

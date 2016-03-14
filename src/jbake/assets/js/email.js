@@ -23,6 +23,7 @@ function buildAjaxConf() {
     return {
         type: "POST",
         url: "https://api.mailgun.net/v3/sandbox1f1c8a6d340244db94f21f52fc273de8.mailgun.org/messages",
+        crossDomain: true,
         error:  errorFuncObj,
         success: successFuncObj,
         beforeSend: basicAuthFuncObj,
