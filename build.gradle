@@ -28,9 +28,10 @@ dependencies {
     testCompile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
 }
 
-def siteDir = "$buildDir/jbake"
+def outputDir = file("$buildDir/resources/main/public")
 jbake {
     description = "Build the static wb site"
+    output  = outputDir
 }
 
 defaultTasks 'jbake'
@@ -43,7 +44,7 @@ githubPages {
   targetBranch = 'master'
   pages {
     //from file('CNAME')
-    from file("$buildDir/jbake")
+    from outputDir
   }
 }
 
