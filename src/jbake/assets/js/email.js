@@ -2,7 +2,7 @@
 function buildRequestData() {
     return {
         from:'Mailgun Sandbox <postmaster@sandbox1f1c8a6d340244db94f21f52fc273de8.mailgun.org>',
-        to:('#personEmail').val(),
+        to: $('#personEmail').val(),
         subject: 'Hello from ' + $('#personName').val(),
         text: $('#questions').val()
     };
