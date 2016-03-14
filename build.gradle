@@ -55,6 +55,6 @@ githubPages {
 classes.dependsOn jbake
 check.dependsOn jbake
 publishGhPages.dependsOn jbake
-assemble.dependsOn publishGhPages
+//assemble.dependsOn publishGhPages
 
 mainClassName = 'org.scc.Application'
