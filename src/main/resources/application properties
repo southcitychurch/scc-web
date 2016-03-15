@@ -1,1 +1,2 @@
-#error.whitelabel.enabled=false
+logging.file=scc-web.log
+logging.level.org.springframework.web=DEBUG
