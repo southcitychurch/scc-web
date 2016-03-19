@@ -4,7 +4,7 @@
 	<head th:replace="header.thyme::head"/>
 	<body onload="prettyPrint()">
 	<div id="wrap">
-		<div th:replace="menu.thyme::menu"/>
+		<div th:replace="menu-scc.thyme::menu"/>
 		<div class="container">
 	
 			<div class="page-header">
