@@ -28,6 +28,7 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-devtools")
     compile 'org.codehaus.groovy:groovy-all:2.4.6'
     compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
     testCompile 'junit:junit:4.12'
@@ -58,3 +59,7 @@ publishGhPages.dependsOn jbake
 //assemble.dependsOn publishGhPages
 
 mainClassName = 'org.scc.Application'
+
+bootRun {
+    addResources = true
+}
