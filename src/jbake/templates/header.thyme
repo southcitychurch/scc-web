@@ -2,7 +2,7 @@
 <html lang="en">
 	<head th:fragment="head">
 	    <meta charset="utf-8"/>
-	    <title th:with="title=(${content.title != null} ? ${content.title} : 'JBake')" th:text="${title}"></title>
+	    <title th:with="title=(${content.title != null} ? ${content.title} : 'SouthCityChurch')" th:text="${title}"></title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	    <meta name="description" content=""/>
 	    <meta name="author" content=""/>
