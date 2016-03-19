@@ -71,6 +71,6 @@ bootRun {
 }
 
 war {
-    baseName = 'sccapp'
-    version =  '0.5.0'
+    archiveName = 'ROOT.war'
+    destinationDir = file('webapps')
 }
