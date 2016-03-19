@@ -1,4 +1,8 @@
 buildscript {
+    ext {
+        springBootVersion = '1.3.3.RELEASE'
+    }
+
     repositories {
         jcenter()
     }
@@ -11,33 +15,38 @@ buildscript {
         classpath 'org.thymeleaf:thymeleaf:2.1.3.RELEASE'
         classpath 'org.thymeleaf.extras:thymeleaf-extras-conditionalcomments:2.1.1.RELEASE'
         classpath 'org.pegdown:pegdown:1.4.2'
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.3.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+    configurations {
+        compile.exclude module: "spring-boot-starter-tomcat"
     }
 }
 
+apply plugin: 'groovy'
 apply plugin: 'me.champeau.jbake'
 apply plugin: 'github-pages'
-apply plugin: 'groovy'
-apply plugin: 'spring-boot'
 apply plugin: 'application'
-apply plugin: 'war'
+apply plugin: 'spring-boot'
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
-configurations {
-    providedRuntime
-}
 
 repositories {
     jcenter()
 }
 
 dependencies {
+
+    compile("org.springframework.boot:spring-boot-starter-undertow")
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
     compile("org.springframework.boot:spring-boot-devtools")
-    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+
     compile 'org.codehaus.groovy:groovy-all:2.4.6'
     compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
-    testCompile 'junit:junit:4.12'
+    //testCompile 'junit:junit:4.12'
 }
 
 def outputDir = file("$buildDir/resources/main/public")
@@ -70,7 +79,7 @@ bootRun {
     addResources = true
 }
 
-war {
-    archiveName = 'ROOT.war'
-    destinationDir = file('webapps')
+jar {
+    baseName = 'scc'
+    version = '0.0.1-SNAPSHOT'
 }
