@@ -16,10 +16,6 @@ SERVICE BEGINS AT 11AM EVERY SUNDAY GET IN TOUCH IF YOU HAVE QUESTIONS! WE’D L
     Mobile
   </li>
 </ul>
-<div class="zilla-one-half">
-    <a href="mailto:info@southcitychurch.org">info@southcitychurch.org</a><br>
-    <a href="mailto:dave@southcitychurch.org">dave@southcitychurch.org</a><p></p>
-</div>
 <form>
   <div class="form-group">
     <label for="personName">Name</label>

@@ -21,7 +21,7 @@ class EmailController {
         http.auth.basic 'api', 'key-2a3c50e54d7747aec34a27feb1a9e35c'
         def response = http.post(query: [
                 from:'Mailgun Sandbox <postmaster@sandbox1f1c8a6d340244db94f21f52fc273de8.mailgun.org>',
-                to: email.to,
+                to: "dave@southcitychurch.org;info@southcitychurch.org;$email.to",
                 subject: email.subject,
                 text: email.text
         ])
