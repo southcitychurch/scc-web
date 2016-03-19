@@ -20,7 +20,12 @@ apply plugin: 'github-pages'
 apply plugin: 'groovy'
 apply plugin: 'spring-boot'
 apply plugin: 'application'
+apply plugin: 'war'
 
+
+configurations {
+    providedRuntime
+}
 
 repositories {
     jcenter()
@@ -29,6 +34,7 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-devtools")
+    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     compile 'org.codehaus.groovy:groovy-all:2.4.6'
     compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
     testCompile 'junit:junit:4.12'
@@ -62,4 +68,9 @@ mainClassName = 'org.scc.Application'
 
 bootRun {
     addResources = true
+}
+
+war {
+    baseName = 'sccapp'
+    version =  '0.5.0'
 }
