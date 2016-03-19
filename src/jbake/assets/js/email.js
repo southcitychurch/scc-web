@@ -18,11 +18,12 @@ function buildAjaxConf() {
     };
     var theData = buildRequestData()
     return {
-        type: "GET",
+        type: "POST",
+        contentType : 'application/json',
         url:"/email",
         error:  errorFuncObj,
         success: successFuncObj,
-        data: theData
+        data: JSON.stringify(theData)
      };
 }
 
