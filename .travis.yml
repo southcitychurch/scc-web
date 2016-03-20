@@ -7,13 +7,12 @@ cache:
   - $HOME/.gradle/wrapper/
 jdk:
 - oraclejdk8
-#deploy:
-#  provider: openshift
-#  user: luistrigueiros@gmail.com
-#  password:
-#    secure: NOQylZ4zpf7SADH9OUTCSfqRQ1m1ILdvYUWjbJYJkTSn/JFRyxEkyKiRmmxD0N8PYXVHSKapxnPWyXBRfEeafNBcmtit9nKZc5OXn8RpfxDX6US/dAHB7Gu9luKoVWxSm1K7afLn4d212q2eCbcJoQXcRaeDqV1juMqovlwrsobBZcXJ6apo3Sc7YwP27yQC3mA/FWlFoWqZ0S5gR3ATXkmVhE96qNH0l9lluKJg85Qvdq/qIdC2nSjV5Js6yhziXWhLKRBz4uq46ZI9/jLZ8b3YlCxfp8TVjqJGX3F0KBCCXLnZdCJzg+mzsRxjakwZBfTuY4X0/zG5pPHuSeHEGtdeaOXYeihUClajYO/bCZhuEUGl2RhuPvn/wgLVxUzoPhbqksGjDVIPu0WeaOVMpWxDZFSaf86pK7ATO8lQ/sIemOdOfOwYGn95L7jiSsOFh3BT/FX25JyIjaUTo4avC/FGawx74Z/zRkNdf4HjuVra0/30zNGczN3Msg0v9SQdQxcHO/e6mTOM+MlCF69M/9gvbv8aMqH4Kf5v6y2uTnnbIeyEXO3X2lheVkA1n7R2jSqOKNNAKIdofSpO2zWrPIeCEtdsyrTVInlmUB2o5HD+AbEehQazFVaDvFkNLmZWkIh+zt6yypxf7g26Wq7vK1HSSYB85I3nghtBbhGizWU=
-#  app: app
-#  domain: southcitychurch
-#  on:
-#    repo: southcitychurch/scc-web
-#
+deploy:
+  provider: openshift
+  user: luistrigueiros@gmail.com
+  password:
+    secure: EJMsx5pAuyUY7hTIMMOV9tmhZo0LV8ZTfI71MNznnA/AdLOh1hSbMMUuEzCxjwFCo0Oqq/FhN0JOF4tydBpg7heoCeZl2firZFImZa9Cz0Viiy5zRjR6f4YHRELNDHejB9H0akrkoY1XYO5ZvnMp6yRBwQ5qLDfBBGWsE4VwpXD8BBHRhwnvZNMladeIvXsa9mNbfeR4dM4gkKkWc/V27xIxMiH8cH8S0y6iUBxo1XCBMWNet9pE3fA4jB5PBiZiWJoWjIVh/8mUmxmpOfB/C/9hBSoiA1Ju9+LdDb5tiVfQUH/DEXdNEU5q/zRQFZ2d5jzd2QKalV+1uWyi3ipGU8TnWTfTy0tbphnyj5OrmSQMdH1Ux2pFp0K8toOTP22f4XWLlT3rD0WDcFSWUvyHbbfgs3Wn4ag0AEJvqdaFX2yIBC03o8bCiM2xrOz2OQsrAoZIEnhN9xjUHuCkKlWGuFrR9f/kDBUaVR4cxM4cerPsp6Jw4OKht11P6jdSKixDUpJfZhxiaRW0s/QIQ/7h84kTrpKyTtvWWs4JjVSX6D5uyhRYRlokS66Wpbe7mfaljclJJKxe9oqXVi4m2nlTiUUHq1nAYvD1Yh+o6/GdL3XgjdPfJVKLYLz9bBIbTF9JrUYc5ZvAXP7D2YhphBRPGi76HQMTcZLK6sa0YuQ9TqM=
+  app: app
+  domain: southcitychurch
+  on:
+    repo: southcitychurch/scc-web
