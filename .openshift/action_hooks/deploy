@@ -23,11 +23,9 @@ if [ ! -d $OPENSHIFT_DATA_DIR/logs ]
 fi
 
 # Removing gradle cache always, to solve space problems
-rm -f $OPENSHIFT_DATA_DIR/gradle/caches/
+#rm -f $OPENSHIFT_DATA_DIR/gradle/caches/
 
 cd $OPENSHIFT_REPO_DIR
-export GRADLE_USER_HOME=$OPENSHIFT_DATA_DIR/gradle
-export GRADLE_HOME=$OPENSHIFT_DATA_DIR/gradle
 export GRADLE_OPTS="-Xms384m -Xmx412m"
 export JAVA_HOME=$OPENSHIFT_DATA_DIR/jdk1.8.0_65
 export PATH=$JAVA_HOME/bin:$PATH
