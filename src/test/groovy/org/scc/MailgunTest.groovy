@@ -1,10 +1,9 @@
 package org.scc
 
 import groovyx.net.http.HTTPBuilder
-import org.junit.Test
 
 class MailgunTest {
-    @Test
+    //@Test()
     void shouldBeAbleToSendEmail() {
 
         HTTPBuilder http = new HTTPBuilder('https://api.mailgun.net/v3/sandbox1f1c8a6d340244db94f21f52fc273de8.mailgun.org/messages')
