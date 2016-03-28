@@ -18,7 +18,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
+            <li class="active dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'pages/about/welcome.html'">Welcome</a></li>
