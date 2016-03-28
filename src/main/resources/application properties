@@ -1,4 +1,0 @@
-logging.file=scc-web.log
-logging.level.org.springframework.web=DEBUG
-
-#apiKey = key-2a3c50e54d7747aec34a27feb1a9e35c

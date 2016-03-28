@@ -14,7 +14,7 @@ class EmailController {
 
     final static Logger logger = LoggerFactory.getLogger(EmailController.class);
 
-    @Value('${name:key-2a3c50e54d7747aec34a27feb1a9e35c}')
+    @Value('${apiKey}')
     private String apiKey;
 
     @RequestMapping("/email")
