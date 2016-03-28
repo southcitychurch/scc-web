@@ -1,6 +1,6 @@
 title=Leadership
 date=2016-02-27 
-type=page
+type=post
 status=published
 ~~~~~~
 
