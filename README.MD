@@ -1,7 +1,7 @@
 # Intro
 
 This is the source code of the SouthCityChurch Dublin web site. 
-The concept for the site is to leverage **Github** to host both the source code and the generated web site.
+The concept for the site is to leverage **Github** to host both the source code.
 The advantages of this approach are:
 
 * GitHub enables a highly collaborative authoring flow. 
@@ -21,7 +21,7 @@ Additionally you may what to:
 * Use watch and start features of GitHub to receive notifications of updates to the source code
 * Use the GitHub mobile app to also to get push notifications of content updates. 
 
-The generated web site is accessible at http://southcitychurch.github.io/pages/about/welcome.html .
+The generated web site is accessible at http://app-southcitychurch.rhcloud.com , it is been deployed to Openshift cloud provider by Travis-CI build tool. The deploy is all automatic and does not require any manual intervenction.
 
 To keep the publishing and build of the web site fast it is recommended to keep the images in a separate image hosting solution and here only the source code so images.
 So for example the media folder is pulling images from Google Photos album at https://goo.gl/photos/wG9ATnKdvF5kmkk3A . 
