@@ -1,6 +1,6 @@
 title=Calendar
 date=2016-02-27
-type=postx
+type=page
 status=published
 ~~~~~~
 
